@@ -14,7 +14,8 @@ body {
 
 .container {
   margin: 2rem auto;
-  width: 550px;
+  width: 95%;
+  max-width: 550px;
   background-color: #1f2937;
 }
 
@@ -45,6 +46,7 @@ select > option {
   padding: 1.25rem;
 }
 .get-btn {
+  display: block;
   background-color: #3d4b60;
   padding: 0.7rem;
   font-size: 0.725rem;
@@ -62,7 +64,9 @@ select > option {
 }
 
 ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.125rem;
 }
 
 li {
@@ -74,8 +78,15 @@ li {
 }
 
 .color {
-  width: 110px;
-  height: 400px;
+  min-width: 100%;
+  height: 170px;
+}
+
+h2 {
+  color: #c8c8c8;
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin: 1rem auto;
 }
 
 h3 {
